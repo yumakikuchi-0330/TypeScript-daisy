@@ -3,10 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TypeScript応用課題</title>
+  <title>ショッピングカート</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="main.js"></script>
+  <header class="header">
+    <h2>商品カート</h1>
+  </header>
+  <div class="main">
+  <!--商品リスト -->
+    <section class="goods">
+      <h2 class="goods-header">商品</h2>
+      <div id="item-list" class="item-list"></div>
+    </section>
+    <!-- カート & 集計エリア -->
+    <div class="right-cart">
+      <section class="cart">
+        <h2 id="cart-header" class="cart-header">カート(0)</h2>
+        <div id="cart-list" class="item-list"></div>
+      </section>
+      <section class="total">
+        <h2 class="cart-header">カート内(0)</h2>
+        <div class="cart-body">
+          <p class="cart-item">点数：<span id="cart-count">0点</span></p>
+          <p class="cart-item">割引金額：<span id="cart-discount">0円</span></p>
+          <p class="cart-total">合計金額：<span id="cart-total">¥0</span></p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
 </body>
 </html>
