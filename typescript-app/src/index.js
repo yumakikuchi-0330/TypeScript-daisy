@@ -8,7 +8,7 @@ const goodsData = [
 // 操作用の商品リスト配列コピー
 let currentData = [...goodsData];
 // カレントカート（初期状態は null）
-let currentCart = null;
+let currentCart = [];
 //要素の取得
 const itemList = document.querySelectorAll(".item-list");
 const cartHeader = document.querySelectorAll(".cart-header");

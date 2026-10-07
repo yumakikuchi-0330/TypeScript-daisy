@@ -23,7 +23,7 @@ const goodsData: GoodsList[] = [
 // 操作用の商品リスト配列コピー
 let currentData: GoodsList[] = [...goodsData];
 // カレントカート（初期状態は null）
-let currentCart: CurrentCartType = null;
+let currentCart: CurrentCartType = [];
 
 //要素の取得
 const itemList = document.querySelectorAll(".item-list");
